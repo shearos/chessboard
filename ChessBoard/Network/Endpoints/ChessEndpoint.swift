@@ -1,10 +1,3 @@
-//
-//  ChessEndpoint.swift
-//  ChessBoard
-//
-//  Created by Samuel Shearing on 14/1/2023.
-//
-
 import Foundation
 
 enum ChessEndpoint {
@@ -27,7 +20,6 @@ extension ChessEndpoint: Endpoint {
     }
     
     var header: [String: String]? {
-        // Access Token to use in Bearer header
         switch self {
         case .leaderboards:
             return [
