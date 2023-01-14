@@ -12,6 +12,12 @@
 		5A1F1C94297227C2004726A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1C93297227C2004726A7 /* ViewController.swift */; };
 		5A1F1C99297227C4004726A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1F1C98297227C4004726A7 /* Assets.xcassets */; };
 		5A1F1C9C297227C4004726A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A1F1C9A297227C4004726A7 /* LaunchScreen.storyboard */; };
+		5A1F1CA72972355F004726A7 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CA62972355F004726A7 /* Endpoint.swift */; };
+		5A1F1CA929723569004726A7 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CA829723569004726A7 /* HTTPClient.swift */; };
+		5A1F1CAB2972357C004726A7 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CAA2972357C004726A7 /* HTTPMethod.swift */; };
+		5A1F1CAD29723588004726A7 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CAC29723588004726A7 /* RequestError.swift */; };
+		5A1F1CB129723638004726A7 /* ChessEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CB029723638004726A7 /* ChessEndpoint.swift */; };
+		5A1F1CB329723671004726A7 /* ChessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CB229723671004726A7 /* ChessService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		5A1F1C98297227C4004726A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A1F1C9B297227C4004726A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A1F1C9D297227C4004726A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A1F1CA62972355F004726A7 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		5A1F1CA829723569004726A7 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		5A1F1CAA2972357C004726A7 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		5A1F1CAC29723588004726A7 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		5A1F1CB029723638004726A7 /* ChessEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessEndpoint.swift; sourceTree = "<group>"; };
+		5A1F1CB229723671004726A7 /* ChessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 		5A1F1C8E297227C2004726A7 /* ChessBoard */ = {
 			isa = PBXGroup;
 			children = (
+				5A1F1CA42972353C004726A7 /* Network */,
 				5A1F1C8F297227C2004726A7 /* AppDelegate.swift */,
 				5A1F1C91297227C2004726A7 /* SceneDelegate.swift */,
 				5A1F1C93297227C2004726A7 /* ViewController.swift */,
@@ -62,6 +75,43 @@
 				5A1F1C9D297227C4004726A7 /* Info.plist */,
 			);
 			path = ChessBoard;
+			sourceTree = "<group>";
+		};
+		5A1F1CA42972353C004726A7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5A1F1CA529723547004726A7 /* Base */,
+				5A1F1CAE29723612004726A7 /* Endpoints */,
+				5A1F1CAF29723618004726A7 /* Services */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5A1F1CA529723547004726A7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5A1F1CA62972355F004726A7 /* Endpoint.swift */,
+				5A1F1CA829723569004726A7 /* HTTPClient.swift */,
+				5A1F1CAA2972357C004726A7 /* HTTPMethod.swift */,
+				5A1F1CAC29723588004726A7 /* RequestError.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5A1F1CAE29723612004726A7 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				5A1F1CB029723638004726A7 /* ChessEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		5A1F1CAF29723618004726A7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5A1F1CB229723671004726A7 /* ChessService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +184,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1F1CAD29723588004726A7 /* RequestError.swift in Sources */,
 				5A1F1C94297227C2004726A7 /* ViewController.swift in Sources */,
+				5A1F1CB129723638004726A7 /* ChessEndpoint.swift in Sources */,
+				5A1F1CB329723671004726A7 /* ChessService.swift in Sources */,
+				5A1F1CA929723569004726A7 /* HTTPClient.swift in Sources */,
+				5A1F1CAB2972357C004726A7 /* HTTPMethod.swift in Sources */,
 				5A1F1C90297227C2004726A7 /* AppDelegate.swift in Sources */,
+				5A1F1CA72972355F004726A7 /* Endpoint.swift in Sources */,
 				5A1F1C92297227C2004726A7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
