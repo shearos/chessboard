@@ -36,7 +36,7 @@ extension ChessEndpoint: Endpoint {
         }
     }
     
-    var body: [String: String]? {
+    var body: Encodable? {
         switch self {
         case .leaderboards:
             return nil

@@ -26,8 +26,13 @@ extension HTTPClient {
         request.httpMethod = endpoint.method.rawValue
         request.allHTTPHeaderFields = endpoint.header
         
+        let encoder = JSONEncoder()
+        encoder.keyEncodingStrategy = .convertToSnakeCase
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        
         if let body = endpoint.body {
-            request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: [])
+            request.httpBody = try? encoder.encode(body)
         }
         
         do {
@@ -37,7 +42,7 @@ extension HTTPClient {
             }
             switch response.statusCode {
             case 200...299:
-                guard let decodedResponse = try? JSONDecoder().decode(responseModel, from: data) else {
+                guard let decodedResponse = try? decoder.decode(responseModel, from: data) else {
                     return .failure(.decode)
                 }
                 return .success(decodedResponse)

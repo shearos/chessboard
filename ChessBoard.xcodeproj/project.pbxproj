@@ -18,6 +18,8 @@
 		5A1F1CAD29723588004726A7 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CAC29723588004726A7 /* RequestError.swift */; };
 		5A1F1CB129723638004726A7 /* ChessEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CB029723638004726A7 /* ChessEndpoint.swift */; };
 		5A1F1CB329723671004726A7 /* ChessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CB229723671004726A7 /* ChessService.swift */; };
+		5A1F1CB62972388B004726A7 /* Leaderboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CB52972388B004726A7 /* Leaderboards.swift */; };
+		5A1F1CB8297238EA004726A7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CB7297238EA004726A7 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		5A1F1CAC29723588004726A7 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 		5A1F1CB029723638004726A7 /* ChessEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessEndpoint.swift; sourceTree = "<group>"; };
 		5A1F1CB229723671004726A7 /* ChessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessService.swift; sourceTree = "<group>"; };
+		5A1F1CB52972388B004726A7 /* Leaderboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboards.swift; sourceTree = "<group>"; };
+		5A1F1CB7297238EA004726A7 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		5A1F1C8E297227C2004726A7 /* ChessBoard */ = {
 			isa = PBXGroup;
 			children = (
+				5A1F1CB42972386E004726A7 /* Models */,
 				5A1F1CA42972353C004726A7 /* Network */,
 				5A1F1C8F297227C2004726A7 /* AppDelegate.swift */,
 				5A1F1C91297227C2004726A7 /* SceneDelegate.swift */,
@@ -112,6 +117,15 @@
 				5A1F1CB229723671004726A7 /* ChessService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		5A1F1CB42972386E004726A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A1F1CB52972388B004726A7 /* Leaderboards.swift */,
+				5A1F1CB7297238EA004726A7 /* Player.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,9 +198,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1F1CB8297238EA004726A7 /* Player.swift in Sources */,
 				5A1F1CAD29723588004726A7 /* RequestError.swift in Sources */,
 				5A1F1C94297227C2004726A7 /* ViewController.swift in Sources */,
 				5A1F1CB129723638004726A7 /* ChessEndpoint.swift in Sources */,
+				5A1F1CB62972388B004726A7 /* Leaderboards.swift in Sources */,
 				5A1F1CB329723671004726A7 /* ChessService.swift in Sources */,
 				5A1F1CA929723569004726A7 /* HTTPClient.swift in Sources */,
 				5A1F1CAB2972357C004726A7 /* HTTPMethod.swift in Sources */,
