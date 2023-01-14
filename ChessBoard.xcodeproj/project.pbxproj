@@ -12,7 +12,28 @@
 		5A1F1C94297227C2004726A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1C93297227C2004726A7 /* ViewController.swift */; };
 		5A1F1C99297227C4004726A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1F1C98297227C4004726A7 /* Assets.xcassets */; };
 		5A1F1C9C297227C4004726A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A1F1C9A297227C4004726A7 /* LaunchScreen.storyboard */; };
+		5A1F1CA72972355F004726A7 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CA62972355F004726A7 /* Endpoint.swift */; };
+		5A1F1CA929723569004726A7 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CA829723569004726A7 /* HTTPClient.swift */; };
+		5A1F1CAB2972357C004726A7 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CAA2972357C004726A7 /* HTTPMethod.swift */; };
+		5A1F1CAD29723588004726A7 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CAC29723588004726A7 /* RequestError.swift */; };
+		5A1F1CB129723638004726A7 /* ChessEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CB029723638004726A7 /* ChessEndpoint.swift */; };
+		5A1F1CB329723671004726A7 /* ChessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CB229723671004726A7 /* ChessService.swift */; };
+		5A1F1CB62972388B004726A7 /* Leaderboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CB52972388B004726A7 /* Leaderboards.swift */; };
+		5A1F1CB8297238EA004726A7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CB7297238EA004726A7 /* Player.swift */; };
+		5A1F1CFC297260B3004726A7 /* ChessBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1CFB297260B3004726A7 /* ChessBoardTests.swift */; };
+		5A1F1D03297261F0004726A7 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F1D02297261F0004726A7 /* Mockable.swift */; };
+		5A1F1D06297262A5004726A7 /* leaderboards_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A1F1D05297262A5004726A7 /* leaderboards_response.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A1F1CFD297260B3004726A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A1F1C84297227C2004726A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A1F1C8B297227C2004726A7;
+			remoteInfo = ChessBoard;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5A1F1C8C297227C2004726A7 /* ChessBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +43,29 @@
 		5A1F1C98297227C4004726A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A1F1C9B297227C4004726A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A1F1C9D297227C4004726A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A1F1CA62972355F004726A7 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		5A1F1CA829723569004726A7 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		5A1F1CAA2972357C004726A7 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		5A1F1CAC29723588004726A7 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		5A1F1CB029723638004726A7 /* ChessEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessEndpoint.swift; sourceTree = "<group>"; };
+		5A1F1CB229723671004726A7 /* ChessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessService.swift; sourceTree = "<group>"; };
+		5A1F1CB52972388B004726A7 /* Leaderboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboards.swift; sourceTree = "<group>"; };
+		5A1F1CB7297238EA004726A7 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		5A1F1CF9297260B3004726A7 /* ChessBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A1F1CFB297260B3004726A7 /* ChessBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessBoardTests.swift; sourceTree = "<group>"; };
+		5A1F1D02297261F0004726A7 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
+		5A1F1D05297262A5004726A7 /* leaderboards_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = leaderboards_response.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5A1F1C89297227C2004726A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A1F1CF6297260B3004726A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				5A1F1C8E297227C2004726A7 /* ChessBoard */,
+				5A1F1CFA297260B3004726A7 /* ChessBoardTests */,
 				5A1F1C8D297227C2004726A7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				5A1F1C8C297227C2004726A7 /* ChessBoard.app */,
+				5A1F1CF9297260B3004726A7 /* ChessBoardTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +96,8 @@
 		5A1F1C8E297227C2004726A7 /* ChessBoard */ = {
 			isa = PBXGroup;
 			children = (
+				5A1F1CB42972386E004726A7 /* Models */,
+				5A1F1CA42972353C004726A7 /* Network */,
 				5A1F1C8F297227C2004726A7 /* AppDelegate.swift */,
 				5A1F1C91297227C2004726A7 /* SceneDelegate.swift */,
 				5A1F1C93297227C2004726A7 /* ViewController.swift */,
@@ -62,6 +106,70 @@
 				5A1F1C9D297227C4004726A7 /* Info.plist */,
 			);
 			path = ChessBoard;
+			sourceTree = "<group>";
+		};
+		5A1F1CA42972353C004726A7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5A1F1CA529723547004726A7 /* Base */,
+				5A1F1CAE29723612004726A7 /* Endpoints */,
+				5A1F1CAF29723618004726A7 /* Services */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5A1F1CA529723547004726A7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5A1F1CA62972355F004726A7 /* Endpoint.swift */,
+				5A1F1CA829723569004726A7 /* HTTPClient.swift */,
+				5A1F1CAA2972357C004726A7 /* HTTPMethod.swift */,
+				5A1F1CAC29723588004726A7 /* RequestError.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5A1F1CAE29723612004726A7 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				5A1F1CB029723638004726A7 /* ChessEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		5A1F1CAF29723618004726A7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5A1F1CB229723671004726A7 /* ChessService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5A1F1CB42972386E004726A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A1F1CB52972388B004726A7 /* Leaderboards.swift */,
+				5A1F1CB7297238EA004726A7 /* Player.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5A1F1CFA297260B3004726A7 /* ChessBoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A1F1D0429726282004726A7 /* json */,
+				5A1F1CFB297260B3004726A7 /* ChessBoardTests.swift */,
+				5A1F1D02297261F0004726A7 /* Mockable.swift */,
+			);
+			path = ChessBoardTests;
+			sourceTree = "<group>";
+		};
+		5A1F1D0429726282004726A7 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				5A1F1D05297262A5004726A7 /* leaderboards_response.json */,
+			);
+			path = json;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +192,24 @@
 			productReference = 5A1F1C8C297227C2004726A7 /* ChessBoard.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5A1F1CF8297260B3004726A7 /* ChessBoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A1F1CFF297260B3004726A7 /* Build configuration list for PBXNativeTarget "ChessBoardTests" */;
+			buildPhases = (
+				5A1F1CF5297260B3004726A7 /* Sources */,
+				5A1F1CF6297260B3004726A7 /* Frameworks */,
+				5A1F1CF7297260B3004726A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A1F1CFE297260B3004726A7 /* PBXTargetDependency */,
+			);
+			name = ChessBoardTests;
+			productName = ChessBoardTests;
+			productReference = 5A1F1CF9297260B3004726A7 /* ChessBoardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +222,10 @@
 				TargetAttributes = {
 					5A1F1C8B297227C2004726A7 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					5A1F1CF8297260B3004726A7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 5A1F1C8B297227C2004726A7;
 					};
 				};
 			};
@@ -113,6 +243,7 @@
 			projectRoot = "";
 			targets = (
 				5A1F1C8B297227C2004726A7 /* ChessBoard */,
+				5A1F1CF8297260B3004726A7 /* ChessBoardTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +258,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5A1F1CF7297260B3004726A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A1F1D06297262A5004726A7 /* leaderboards_response.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -134,13 +273,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1F1CB8297238EA004726A7 /* Player.swift in Sources */,
+				5A1F1CAD29723588004726A7 /* RequestError.swift in Sources */,
 				5A1F1C94297227C2004726A7 /* ViewController.swift in Sources */,
+				5A1F1CB129723638004726A7 /* ChessEndpoint.swift in Sources */,
+				5A1F1CB62972388B004726A7 /* Leaderboards.swift in Sources */,
+				5A1F1CB329723671004726A7 /* ChessService.swift in Sources */,
+				5A1F1CA929723569004726A7 /* HTTPClient.swift in Sources */,
+				5A1F1CAB2972357C004726A7 /* HTTPMethod.swift in Sources */,
 				5A1F1C90297227C2004726A7 /* AppDelegate.swift in Sources */,
+				5A1F1CA72972355F004726A7 /* Endpoint.swift in Sources */,
 				5A1F1C92297227C2004726A7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5A1F1CF5297260B3004726A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A1F1CFC297260B3004726A7 /* ChessBoardTests.swift in Sources */,
+				5A1F1D03297261F0004726A7 /* Mockable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A1F1CFE297260B3004726A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A1F1C8B297227C2004726A7 /* ChessBoard */;
+			targetProxy = 5A1F1CFD297260B3004726A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5A1F1C9A297227C4004726A7 /* LaunchScreen.storyboard */ = {
@@ -326,6 +490,42 @@
 			};
 			name = Release;
 		};
+		5A1F1D00297260B3004726A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 53KGW7QUJU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.samuelshearing.ChessBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChessBoard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChessBoard";
+			};
+			name = Debug;
+		};
+		5A1F1D01297260B3004726A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 53KGW7QUJU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.samuelshearing.ChessBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChessBoard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChessBoard";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -343,6 +543,15 @@
 			buildConfigurations = (
 				5A1F1CA1297227C4004726A7 /* Debug */,
 				5A1F1CA2297227C4004726A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A1F1CFF297260B3004726A7 /* Build configuration list for PBXNativeTarget "ChessBoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A1F1D00297260B3004726A7 /* Debug */,
+				5A1F1D01297260B3004726A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
