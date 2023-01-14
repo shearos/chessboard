@@ -1,18 +1,18 @@
 import Foundation
 
 protocol HTTPClient {
-    func sendRequest<T: Decodable>(endpoint: Endpoint, responseModel: T.Type) async -> Result<T, RequestError>
+    func sendRequest<T: Decodable>(endpoint: Endpoint, responseModel: T.Type) async throws -> T
 }
 
 extension HTTPClient {
-    func sendRequest<T: Decodable>(endpoint: Endpoint, responseModel: T.Type) async -> Result<T, RequestError> {
+    func sendRequest<T: Decodable>(endpoint: Endpoint, responseModel: T.Type) async throws -> T {
         var urlComponents = URLComponents()
         urlComponents.scheme = endpoint.scheme
         urlComponents.host = endpoint.host
         urlComponents.path = endpoint.path
         
         guard let url = urlComponents.url else {
-            return .failure(.invalidURL)
+            throw RequestError.invalidURL
         }
         
         var request = URLRequest(url: url)
@@ -25,27 +25,24 @@ extension HTTPClient {
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         
         if let body = endpoint.body {
-            request.httpBody = try? encoder.encode(body)
+            request.httpBody = try encoder.encode(body)
         }
         
         do {
             let (data, response) = try await URLSession.shared.data(for: request, delegate: nil)
             guard let response = response as? HTTPURLResponse else {
-                return .failure(.noResponse)
+                throw RequestError.noResponse
             }
             switch response.statusCode {
             case 200...299:
-                guard let decodedResponse = try? decoder.decode(responseModel, from: data) else {
-                    return .failure(.decode)
-                }
-                return .success(decodedResponse)
+                return try decoder.decode(responseModel, from: data)
             case 401:
-                return .failure(.unauthorized)
+                throw RequestError.unauthorized
             default:
-                return .failure(.unexpectedStatusCode)
+                throw RequestError.unexpectedStatusCode
             }
         } catch {
-            return .failure(.unknown)
+            throw RequestError.unknown
         }
     }
 }

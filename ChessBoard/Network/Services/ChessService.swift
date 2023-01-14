@@ -1,11 +1,11 @@
 import Foundation
 
 protocol ChessServiceable {
-    func getLeaderboards() async -> Result<Leaderboards, RequestError>
+    func getLeaderboards() async throws -> Leaderboards
 }
 
 struct ChessService: HTTPClient, ChessServiceable {
-    func getLeaderboards() async -> Result<Leaderboards, RequestError> {
-        return await sendRequest(endpoint: ChessEndpoint.leaderboards, responseModel: Leaderboards.self)
+    func getLeaderboards() async throws -> Leaderboards {
+        return try await sendRequest(endpoint: ChessEndpoint.leaderboards, responseModel: Leaderboards.self)
     }
 }
